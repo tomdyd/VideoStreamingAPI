@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7Fw8q7a6SH4=",
+  "dgSpecHash": "Vx5mWEoxbZo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\VideoStreamingAPI.csproj",
+  "projectFilePath": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\VideoStreamingAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tdyda\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\tdyda\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

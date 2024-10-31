@@ -48,19 +48,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "VideoStreamingAPI.Controllers.UserController",
-    "Method": "GetProfile",
-    "RelativePath": "api/User/profile",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VideoStreamingAPI.Controllers.VideoController",
+    "ContainingType": "VideoStreamingAPI.Controllers.MediaStreamingController",
     "Method": "GetPlaylist",
-    "RelativePath": "api/Video/playlist/{id}",
+    "RelativePath": "api/MediaStreaming/playlist/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -74,9 +64,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "VideoStreamingAPI.Controllers.VideoController",
+    "ContainingType": "VideoStreamingAPI.Controllers.MediaStreamingController",
     "Method": "GetSegment",
-    "RelativePath": "api/Video/segment/{id}/{fileName}",
+    "RelativePath": "api/MediaStreaming/segment/{id}/{fileName}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -92,6 +82,68 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoStreamingAPI.Controllers.MoviesCatalogController",
+    "Method": "GetMovies",
+    "RelativePath": "api/MoviesCatalog",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "offset",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[VideoStreamingAPI.Models.Movie, VideoStreamingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VideoStreamingAPI.Controllers.MoviesCatalogController",
+    "Method": "GetThumbnail",
+    "RelativePath": "api/MoviesCatalog/thumbnail/{folderName}/{fileName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "folderName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VideoStreamingAPI.Controllers.UserController",
+    "Method": "GetProfile",
+    "RelativePath": "api/User/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

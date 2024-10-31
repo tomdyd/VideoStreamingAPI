@@ -47,7 +47,7 @@ namespace VideoStreamingAPI
             {
                 options.AddPolicy("AllowReactApp",
                     builder => builder
-                        .WithOrigins("http://192.168.0.17:3000", "http://localhost:3000") // URL, gdzie dzia³a Twój klient React
+                        .WithOrigins("http://192.168.0.17:3000", "http://localhost:3000", "http://10.0.0.3:3000") // URL, gdzie dzia³a Twój klient React
                         .AllowAnyMethod()
                         .AllowAnyHeader()
                         .AllowCredentials());

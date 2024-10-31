@@ -42,13 +42,15 @@ namespace VideoStreamingAPI.Controllers
                 var userRefreshToken = new RefreshToken
                 {
                     Token = refreshToken,
-                    Expires = DateTime.UtcNow.AddMinutes(1),
+                    Expires = DateTime.UtcNow.AddMinutes(5),
                     IsRevoked = false,
                     UserId = user.Id,
                 };
 
                 await _context.RefreshTokens.AddAsync(userRefreshToken);
                 await _context.SaveChangesAsync();
+
+                Console.WriteLine(token);
 
                 return Ok(new { Token = token, RefreshToken = refreshToken, UserId = user.Id });
             }

@@ -1,78 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\",
+  "WorkspaceRootPath": "D:\\Projekty\\VideoStreamingAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\data\\videostreamingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\data\\videostreamingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\data\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\data\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\controllers\\getprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\controllers\\getprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\getprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\models\\refreshtokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\models\\refreshtokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\data\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\data\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\controllers\\moviescatalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\moviescatalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\models\\appusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\models\\appusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\controllers\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\repositories\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\repositories\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\models\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\models\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\repositories\\imovierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\repositories\\imovierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\models\\videosegment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\models\\videosegment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\videostreamingapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\videostreamingapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|c:\\users\\tdyda\\source\\repos\\videostreamingapi\\videostreamingapi\\migrations\\20241028131246_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\migrations\\20241028131246_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\controllers\\mediastreamingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\mediastreamingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -81,8 +45,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 310,
-          "SelectedChildIndex": 8,
+          "DockedWidth": 337,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,221 +58,120 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "20241028131246_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Migrations\\20241028131246_InitialCreate.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Migrations\\20241028131246_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Migrations\\20241028131246_InitialCreate.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Migrations\\20241028131246_InitialCreate.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBIAAABDAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Data\\TokenService.cs",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\Data\\TokenService.cs",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Data\\TokenService.cs",
+              "RelativeToolTip": "VideoStreamingAPI\\Data\\TokenService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T13:12:46.979Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RefreshTokenRequest.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\RefreshTokenRequest.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Models\\RefreshTokenRequest.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\RefreshTokenRequest.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Models\\RefreshTokenRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T12:45:51.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RefreshToken.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\RefreshToken.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Models\\RefreshToken.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\RefreshToken.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Models\\RefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T11:11:46.475Z"
+              "WhenOpened": "2024-10-31T12:17:08.84Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "GetProfileController.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\GetProfileController.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\GetProfileController.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\GetProfileController.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Controllers\\GetProfileController.cs",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "VideoStreamingAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-31T08:26:45.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\appsettings.json",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\appsettings.json",
+              "RelativeToolTip": "VideoStreamingAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-30T19:10:54.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Program.cs",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\Program.cs",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Program.cs",
+              "RelativeToolTip": "VideoStreamingAPI\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDEAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T10:54:40.644Z"
+              "WhenOpened": "2024-10-29T11:25:01.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MoviesCatalogController.cs",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\MoviesCatalogController.cs",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\MoviesCatalogController.cs",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\MoviesCatalogController.cs",
+              "RelativeToolTip": "VideoStreamingAPI\\Controllers\\MoviesCatalogController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:16:54.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MediaStreamingController.cs",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\MediaStreamingController.cs",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\MediaStreamingController.cs",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\MediaStreamingController.cs",
+              "RelativeToolTip": "VideoStreamingAPI\\Controllers\\MediaStreamingController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T10:54:31.26Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAUwEwAAAAJAAAAAAAAAA==",
+              "Title": "GetProfileController.cs",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\GetProfileController.cs",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\GetProfileController.cs",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\GetProfileController.cs",
+              "RelativeToolTip": "VideoStreamingAPI\\Controllers\\GetProfileController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T07:34:47.915Z",
+              "WhenOpened": "2024-10-31T08:34:16.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "VideoStreamingAPI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAUwCwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T08:19:59.073Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Data\\TokenService.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Data\\TokenService.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Data\\TokenService.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Data\\TokenService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T07:21:57.514Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\appsettings.json",
-              "RelativeToolTip": "VideoStreamingAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-27T18:12:08.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppUserModel.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\AppUserModel.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Models\\AppUserModel.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\AppUserModel.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Models\\AppUserModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T18:09:51.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VideoStreamingDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Data\\VideoStreamingDbContext.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Data\\VideoStreamingDbContext.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Data\\VideoStreamingDbContext.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Data\\VideoStreamingDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T18:07:19.16Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "VideoStreamingAPI\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-26T12:54:14.177Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Program.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Program.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAtwBkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T12:08:06.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IMovieRepository.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Repositories\\IMovieRepository.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Repositories\\IMovieRepository.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Repositories\\IMovieRepository.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Repositories\\IMovieRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T12:06:51.176Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MovieRepository.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Repositories\\MovieRepository.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Repositories\\MovieRepository.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Repositories\\MovieRepository.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Repositories\\MovieRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T12:06:41.428Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "VideoStreamingAPI.csproj",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\VideoStreamingAPI.csproj",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\VideoStreamingAPI.csproj",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\VideoStreamingAPI.csproj",
-              "RelativeToolTip": "VideoStreamingAPI\\VideoStreamingAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-26T12:06:22.178Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Movie.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\Movie.cs",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\Movie.cs",
               "RelativeDocumentMoniker": "VideoStreamingAPI\\Models\\Movie.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\Movie.cs",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\Movie.cs",
               "RelativeToolTip": "VideoStreamingAPI\\Models\\Movie.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T12:05:56.077Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "VideoController.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\VideoController.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\VideoController.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\VideoController.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Controllers\\VideoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T12:02:15.336Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PlayList.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\PlayList.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Models\\PlayList.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\PlayList.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Models\\PlayList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T12:01:56.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "VideoSegment.cs",
-              "DocumentMoniker": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\VideoSegment.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Models\\VideoSegment.cs",
-              "ToolTip": "C:\\Users\\tdyda\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\VideoSegment.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Models\\VideoSegment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T12:01:37.969Z"
+              "WhenOpened": "2024-10-31T11:53:35.288Z",
+              "EditorCaption": ""
             }
           ]
         }
