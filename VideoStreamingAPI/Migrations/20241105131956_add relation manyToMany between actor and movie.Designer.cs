@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VideoStreamingAPI.Data;
 
@@ -11,9 +12,11 @@ using VideoStreamingAPI.Data;
 namespace VideoStreamingAPI.Migrations
 {
     [DbContext(typeof(VideoStreamingDbContext))]
-    partial class VideoStreamingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241105131956_add relation manyToMany between actor and movie")]
+    partial class addrelationmanyToManybetweenactorandmovie
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using VideoStreamingAPI.Repositories;
 using VideoStreamingAPI.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Net.Http.Headers;
 
 namespace VideoStreamingAPI.Controllers
 {
@@ -16,9 +18,9 @@ namespace VideoStreamingAPI.Controllers
             _movieRepository = movieRepository;
         }
         [HttpGet("playlist/{id}")]
+        [Authorize]
         public async Task<IActionResult> GetPlaylist(int id)
         {
-            Console.WriteLine("strzelony");
             var movie = await _movieRepository.GetMovieById(id);
             if (movie == null)
             {
@@ -34,11 +36,10 @@ namespace VideoStreamingAPI.Controllers
             // Wczytanie playlisty
             var playlistContent = System.IO.File.ReadAllText(playlistPath);
 
-            // Dodanie pełnych URL do segmentów
             var baseUrl = $"{Request.Scheme}://{Request.Host}/api/MediaStreaming/segment/{id}/";
             playlistContent = playlistContent.Replace("output", baseUrl + "output");
-
             return Content(playlistContent, "application/vnd.apple.mpegurl");
+
         }
 
 
@@ -61,7 +62,6 @@ namespace VideoStreamingAPI.Controllers
             {
                 return NotFound("Segment not found.");
             }
-
             return PhysicalFile(segmentPath, "video/MP2T");
         }
     }

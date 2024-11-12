@@ -1,12 +1,15 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using System.Text.Json.Serialization;
 using VideoStreamingAPI.Data;
 using VideoStreamingAPI.Models;
 using VideoStreamingAPI.Repositories;
+using VideoStreamingAPI.Services;
 
 namespace VideoStreamingAPI
 {
@@ -15,6 +18,16 @@ namespace VideoStreamingAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.Configure<FormOptions>(options =>
+            {
+                options.MultipartBodyLengthLimit = 100L * 1024 * 1024 * 1024;
+            });
+
+            builder.WebHost.ConfigureKestrel(serverOptions =>
+            {
+                serverOptions.Limits.MaxRequestBodySize = 100L * 1024 * 1024 * 1024; // 100 GB
+            });
 
             // Add services to the container.
 
@@ -38,6 +51,8 @@ namespace VideoStreamingAPI
             .AddEntityFrameworkStores<VideoStreamingDbContext>()
             .AddDefaultTokenProviders();
 
+            //builder.Services.AddScoped<IFileUploadService, FileUploadService>();
+            builder.Services.AddScoped<FileUploadService>();
             builder.Services.AddScoped<UserManager<AppUserModel>>();
             builder.Services.AddScoped<SignInManager<AppUserModel>>();
             //builder.Services.AddScoped<RoleManager>();
@@ -56,6 +71,12 @@ namespace VideoStreamingAPI
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddControllers()
+           .AddJsonOptions(options =>
+           {
+               options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+           });
+
             builder.Services.AddSwaggerGen(options =>
             {
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

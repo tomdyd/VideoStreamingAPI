@@ -42,7 +42,7 @@ namespace VideoStreamingAPI.Controllers
                 var userRefreshToken = new RefreshToken
                 {
                     Token = refreshToken,
-                    Expires = DateTime.UtcNow.AddMinutes(5),
+                    Expires = DateTime.UtcNow.AddMinutes(15),
                     IsRevoked = false,
                     UserId = user.Id,
                 };
@@ -102,7 +102,7 @@ namespace VideoStreamingAPI.Controllers
             var newAccessToken = _tokenService.GenerateJwtToken(user.Id, user.Email, "User");
 
             // Opcjonalnie: Zaktualizuj refresh token (można tutaj dodać rotację tokena odświeżania)
-            //storedToken.Expires = DateTime.UtcNow.AddDays(7); // Przedłużamy ważność
+            storedToken.Expires = DateTime.UtcNow.AddMinutes(5); // Przedłużamy ważność
             await _context.SaveChangesAsync();
 
             Console.WriteLine("TOKEN ODŚWIEŻONY");

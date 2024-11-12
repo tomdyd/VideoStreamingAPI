@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VideoStreamingAPI.Data;
 
@@ -11,9 +12,11 @@ using VideoStreamingAPI.Data;
 namespace VideoStreamingAPI.Migrations
 {
     [DbContext(typeof(VideoStreamingDbContext))]
-    partial class VideoStreamingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241031141331_add tags")]
+    partial class addtags
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -155,23 +158,6 @@ namespace VideoStreamingAPI.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("VideoStreamingAPI.Models.Actor", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Actor");
-                });
-
             modelBuilder.Entity("VideoStreamingAPI.Models.AppUserModel", b =>
                 {
                     b.Property<string>("Id")
@@ -260,21 +246,6 @@ namespace VideoStreamingAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Movies");
-                });
-
-            modelBuilder.Entity("VideoStreamingAPI.Models.MovieActor", b =>
-                {
-                    b.Property<int>("MovieId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ActorId")
-                        .HasColumnType("int");
-
-                    b.HasKey("MovieId", "ActorId");
-
-                    b.HasIndex("ActorId");
-
-                    b.ToTable("MovieActor");
                 });
 
             modelBuilder.Entity("VideoStreamingAPI.Models.MovieTag", b =>
@@ -387,25 +358,6 @@ namespace VideoStreamingAPI.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("VideoStreamingAPI.Models.MovieActor", b =>
-                {
-                    b.HasOne("VideoStreamingAPI.Models.Actor", "Actor")
-                        .WithMany("MovieActors")
-                        .HasForeignKey("ActorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("VideoStreamingAPI.Models.Movie", "Movie")
-                        .WithMany("MovieActors")
-                        .HasForeignKey("MovieId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Actor");
-
-                    b.Navigation("Movie");
-                });
-
             modelBuilder.Entity("VideoStreamingAPI.Models.MovieTag", b =>
                 {
                     b.HasOne("VideoStreamingAPI.Models.Movie", "Movie")
@@ -425,15 +377,8 @@ namespace VideoStreamingAPI.Migrations
                     b.Navigation("Tag");
                 });
 
-            modelBuilder.Entity("VideoStreamingAPI.Models.Actor", b =>
-                {
-                    b.Navigation("MovieActors");
-                });
-
             modelBuilder.Entity("VideoStreamingAPI.Models.Movie", b =>
                 {
-                    b.Navigation("MovieActors");
-
                     b.Navigation("MovieTags");
                 });
 

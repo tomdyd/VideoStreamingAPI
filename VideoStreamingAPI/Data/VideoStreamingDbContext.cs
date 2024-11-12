@@ -10,5 +10,44 @@ namespace VideoStreamingAPI.Data
         public VideoStreamingDbContext(DbContextOptions<VideoStreamingDbContext> options) : base(options) { }
         public DbSet<Movie> Movies { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
+        public DbSet<MovieTag> MovieTags { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<MovieTag>()
+                .HasKey(mt => new { mt.MovieId, mt.TagId });
+
+            modelBuilder.Entity<MovieTag>()
+                .HasOne(mt => mt.Movie)
+                .WithMany(m => m.MovieTags)  // Upewnij się, że właściwość w Movie jest nazwane poprawnie
+                .HasForeignKey(mt => mt.MovieId);
+
+            modelBuilder.Entity<MovieTag>()
+                .HasOne(mt => mt.Tag)
+                .WithMany(t => t.MovieTags)  // Upewnij się, że właściwość w Tag jest nazwane poprawnie
+                .HasForeignKey(mt => mt.TagId);
+
+            modelBuilder.Entity<MovieActor>()
+                .HasKey(ma => new {ma.MovieId, ma.ActorId});
+
+            modelBuilder.Entity<MovieActor>()
+                .HasOne(ma => ma.Actor)
+                .WithMany(a => a.MovieActors)
+                .HasForeignKey(ma => ma.ActorId);
+
+            modelBuilder.Entity<MovieActor>()
+                .HasOne(ma => ma.Movie)
+                .WithMany(a => a.MovieActors)
+                .HasForeignKey(ma => ma.MovieId);
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("your_connection_string")
+                              .LogTo(Console.WriteLine, LogLevel.Information); // logowanie zapytań do konsoli
+            }
+        }
     }
 }
