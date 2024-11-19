@@ -29,7 +29,11 @@ namespace VideoStreamingAPI
                 serverOptions.Limits.MaxRequestBodySize = 100L * 1024 * 1024 * 1024; // 100 GB
             });
 
+            builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
             // Add services to the container.
+
+            builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 
             builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 
@@ -46,26 +50,27 @@ namespace VideoStreamingAPI
                 options.Password.RequireUppercase = false;
                 options.Password.RequiredLength = 1;
                 options.Password.RequireDigit = false;
-                options.Password.RequireNonAlphanumeric = false;                
+                options.Password.RequireNonAlphanumeric = false;
             })
             .AddEntityFrameworkStores<VideoStreamingDbContext>()
             .AddDefaultTokenProviders();
 
-            //builder.Services.AddScoped<IFileUploadService, FileUploadService>();
-            builder.Services.AddScoped<FileUploadService>();
+            builder.Services.AddScoped<IFileUploadService, FileUploadService>();
+            builder.Services.AddScoped<IFileRemoveService, FileRemoveService>();
             builder.Services.AddScoped<UserManager<AppUserModel>>();
             builder.Services.AddScoped<SignInManager<AppUserModel>>();
-            //builder.Services.AddScoped<RoleManager>();
+            builder.Services.AddScoped<RoleManager>();
             builder.Services.AddScoped<IServiceProvider, ServiceProvider>();
 
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowReactApp",
                     builder => builder
-                        .WithOrigins("http://192.168.0.17:3000", "http://localhost:3000", "http://10.0.0.3:3000") // URL, gdzie dzia³a Twój klient React
-                        .AllowAnyMethod()
-                        .AllowAnyHeader()
-                        .AllowCredentials());
+                    //.WithOrigins("http://192.168.0.17:3000", "http://localhost:3000", "http://10.0.0.3:3000", "http://192.168.0.26:3000", "http://172.20.10.2:3000") // URL, gdzie dzia³a Twój klient React
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+                    //.AllowCredentials());
             });
 
             builder.Services.AddControllers();
@@ -77,19 +82,22 @@ namespace VideoStreamingAPI
                options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
            });
 
-            builder.Services.AddSwaggerGen(options =>
+            bool isSwaggerEnabled = builder.Configuration.GetValue<bool>("Swagger:Enabled");
+            if (isSwaggerEnabled)
             {
-                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                builder.Services.AddSwaggerGen(options =>
                 {
-                    Name = "Authorization",
-                    Type = SecuritySchemeType.ApiKey,
-                    Scheme = "Bearer",
-                    BearerFormat = "JWT",
-                    In = ParameterLocation.Header,
-                    Description = "Enter 'Bearer' [space] and then your valid token in the text input below.\n\nExample: \"Bearer abcdefgh123456\""
-                });
-                options.AddSecurityRequirement(new OpenApiSecurityRequirement
-                {
+                    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                    {
+                        Name = "Authorization",
+                        Type = SecuritySchemeType.ApiKey,
+                        Scheme = "Bearer",
+                        BearerFormat = "JWT",
+                        In = ParameterLocation.Header,
+                        Description = "Enter 'Bearer' [space] and then your valid token in the text input below.\n\nExample: \"Bearer abcdefgh123456\""
+                    });
+                    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+                    {
                         {
                             new OpenApiSecurityScheme
                             {
@@ -101,8 +109,9 @@ namespace VideoStreamingAPI
                             },
                             new string[] {}
                         }
+                    });
                 });
-            });
+            }
 
             builder.Services.AddAuthentication(options =>
             {
@@ -129,7 +138,7 @@ namespace VideoStreamingAPI
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+            if (app.Environment.IsDevelopment() && isSwaggerEnabled)
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();

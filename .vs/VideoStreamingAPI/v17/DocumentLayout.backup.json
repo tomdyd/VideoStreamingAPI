@@ -7,80 +7,44 @@
       "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\controllers\\uploadvideocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\uploadvideocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\services\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\services\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\services\\ifileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\services\\ifileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\data\\videostreamingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\data\\videostreamingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\data\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\data\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\controllers\\mediastreamingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\mediastreamingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\controllers\\managefilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\managefilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\controllers\\moviescatalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\moviescatalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\controllers\\getprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\getprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\controllers\\managerolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\controllers\\managerolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\models\\movieactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\models\\movieactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\services\\fileremoveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\services\\fileremoveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\models\\movietag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\models\\movietag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\models\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\models\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\migrations\\videostreamingdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\migrations\\videostreamingdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\migrations\\20241031141331_add tags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\migrations\\20241031141331_add tags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\migrations\\20241105131956_add relation manytomany between actor and movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\migrations\\20241105131956_add relation manytomany between actor and movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|d:\\projekty\\videostreamingapi\\videostreamingapi\\services\\rolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA380ED-12BE-4347-8AD8-BF4726AB4EB7}|VideoStreamingAPI\\VideoStreamingAPI.csproj|solutionrelative:videostreamingapi\\services\\rolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -89,8 +53,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 337,
-          "SelectedChildIndex": 16,
+          "DockedWidth": 317,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -103,15 +67,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IFileUploadService.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Services\\IFileUploadService.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Services\\IFileUploadService.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Services\\IFileUploadService.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Services\\IFileUploadService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAVAAAAAAAAAA==",
+              "Title": "ManageFilesController.cs",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\ManageFilesController.cs",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\ManageFilesController.cs",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\ManageFilesController.cs",
+              "RelativeToolTip": "VideoStreamingAPI\\Controllers\\ManageFilesController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwC4AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T12:55:57.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T20:33:27.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "VideoStreamingAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-15T14:44:09.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\appsettings.Development.json",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\appsettings.Development.json",
+              "RelativeToolTip": "VideoStreamingAPI\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-15T13:16:01.314Z"
             },
             {
               "$type": "Document",
@@ -121,157 +108,23 @@
               "RelativeDocumentMoniker": "VideoStreamingAPI\\Services\\FileUploadService.cs",
               "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Services\\FileUploadService.cs",
               "RelativeToolTip": "VideoStreamingAPI\\Services\\FileUploadService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAiwEwAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T18:45:14.307Z",
+              "WhenOpened": "2024-11-14T19:28:29.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UploadVideoController.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\UploadVideoController.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\UploadVideoController.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\UploadVideoController.cs*",
-              "RelativeToolTip": "VideoStreamingAPI\\Controllers\\UploadVideoController.cs*",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAwwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T12:50:47.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20241105131956_add relation manyToMany between actor and movie.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Migrations\\20241105131956_add relation manyToMany between actor and movie.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Migrations\\20241105131956_add relation manyToMany between actor and movie.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Migrations\\20241105131956_add relation manyToMany between actor and movie.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Migrations\\20241105131956_add relation manyToMany between actor and movie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T13:19:56.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "VideoStreamingDbContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Migrations\\VideoStreamingDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Migrations\\VideoStreamingDbContextModelSnapshot.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Migrations\\VideoStreamingDbContextModelSnapshot.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Migrations\\VideoStreamingDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T13:07:57.028Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MovieActor.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\MovieActor.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Models\\MovieActor.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\MovieActor.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Models\\MovieActor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T13:05:48.06Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Actor.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\Actor.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Models\\Actor.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\Actor.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Models\\Actor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T13:04:15.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "20241031141331_add tags.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Migrations\\20241031141331_add tags.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Migrations\\20241031141331_add tags.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Migrations\\20241031141331_add tags.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Migrations\\20241031141331_add tags.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T14:13:31.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VideoStreamingDbContext.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Data\\VideoStreamingDbContext.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Data\\VideoStreamingDbContext.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Data\\VideoStreamingDbContext.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Data\\VideoStreamingDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T14:06:44.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MovieTag.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\MovieTag.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Models\\MovieTag.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\MovieTag.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Models\\MovieTag.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T14:06:17.652Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Tag.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\Tag.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Models\\Tag.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\Tag.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Models\\Tag.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T14:05:31.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Data\\TokenService.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Data\\TokenService.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Data\\TokenService.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Data\\TokenService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T12:17:08.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "VideoStreamingAPI\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAswCcAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-31T08:26:45.94Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\appsettings.json",
               "RelativeDocumentMoniker": "VideoStreamingAPI\\appsettings.json",
               "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\appsettings.json",
               "RelativeToolTip": "VideoStreamingAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-30T19:10:54.059Z"
+              "WhenOpened": "2024-11-14T15:41:06.412Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -279,48 +132,24 @@
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Program.cs",
               "RelativeDocumentMoniker": "VideoStreamingAPI\\Program.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Program.cs*",
-              "RelativeToolTip": "VideoStreamingAPI\\Program.cs*",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwDoAAABMAAAAAAAAAA==",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Program.cs",
+              "RelativeToolTip": "VideoStreamingAPI\\Program.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwEcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T11:25:01.515Z",
+              "WhenOpened": "2024-11-14T14:40:32.684Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "MoviesCatalogController.cs",
               "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\MoviesCatalogController.cs",
               "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\MoviesCatalogController.cs",
               "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\MoviesCatalogController.cs",
               "RelativeToolTip": "VideoStreamingAPI\\Controllers\\MoviesCatalogController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAYwBwAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAIwFkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T11:16:54.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MediaStreamingController.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\MediaStreamingController.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\MediaStreamingController.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\MediaStreamingController.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Controllers\\MediaStreamingController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA5wCUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T10:54:31.26Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GetProfileController.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\GetProfileController.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\GetProfileController.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\GetProfileController.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Controllers\\GetProfileController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T08:34:16.273Z"
+              "WhenOpened": "2024-11-14T14:30:26.199Z"
             },
             {
               "$type": "Document",
@@ -330,22 +159,45 @@
               "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\AccountController.cs",
               "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\AccountController.cs",
               "RelativeToolTip": "VideoStreamingAPI\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAwwHAAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwCUAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T08:19:59.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T13:17:35.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Movie.cs",
-              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\Movie.cs",
-              "RelativeDocumentMoniker": "VideoStreamingAPI\\Models\\Movie.cs",
-              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Models\\Movie.cs",
-              "RelativeToolTip": "VideoStreamingAPI\\Models\\Movie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "RoleManager.cs",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Services\\RoleManager.cs",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\Services\\RoleManager.cs",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Services\\RoleManager.cs",
+              "RelativeToolTip": "VideoStreamingAPI\\Services\\RoleManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T11:53:35.288Z"
+              "WhenOpened": "2024-11-14T13:10:18.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ManageRolesController.cs",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\ManageRolesController.cs",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\Controllers\\ManageRolesController.cs",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Controllers\\ManageRolesController.cs",
+              "RelativeToolTip": "VideoStreamingAPI\\Controllers\\ManageRolesController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowC8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T13:10:15.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FileRemoveService.cs",
+              "DocumentMoniker": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Services\\FileRemoveService.cs",
+              "RelativeDocumentMoniker": "VideoStreamingAPI\\Services\\FileRemoveService.cs",
+              "ToolTip": "D:\\Projekty\\VideoStreamingAPI\\VideoStreamingAPI\\Services\\FileRemoveService.cs",
+              "RelativeToolTip": "VideoStreamingAPI\\Services\\FileRemoveService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T00:02:52.337Z"
             }
           ]
         }

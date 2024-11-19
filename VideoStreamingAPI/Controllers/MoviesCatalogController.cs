@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using VideoStreamingAPI.Data;
 using VideoStreamingAPI.Models;
 using VideoStreamingAPI.Repositories;
@@ -9,20 +10,28 @@ namespace VideoStreamingAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize()]
     public class MoviesCatalogController : Controller
     {
         private readonly VideoStreamingDbContext _context;
-        private readonly string _thumbnailDirectory = @"C:\Users\tdyda\Documents\tdyda\videos\";
+        private readonly string _thumbnailDirectory;
 
-        public MoviesCatalogController(VideoStreamingDbContext context)
+        public MoviesCatalogController(VideoStreamingDbContext context, IOptions<AppSettings> appSettings)
         {
             _context = context;
+            _thumbnailDirectory = appSettings.Value.UploadFolderPath;
         }
         [HttpGet("get-videos")]        
-        public async Task<ActionResult<IEnumerable<Movie>>> GetMovies([FromQuery] int limit = 10, [FromQuery] int offset = 0)
+        public async Task<ActionResult<IEnumerable<Movie>>> GetMovies([FromQuery] string query = "", [FromQuery] int limit = 10, [FromQuery] int offset = 0)
         {
-            var movies = await _context.Movies.Skip(offset).Take(limit).ToListAsync();
+            var moviesQuery = _context.Movies.AsQueryable();
+
+            if (!string.IsNullOrEmpty(query))
+            {
+                moviesQuery = moviesQuery.Where(movie => movie.Title.Contains(query));
+            }
+
+            var movies = await moviesQuery.Skip(offset).Take(limit).ToListAsync();
 
             var totalMovies = await _context.Movies.CountAsync();
 

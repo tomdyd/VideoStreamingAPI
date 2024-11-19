@@ -11,6 +11,8 @@ namespace VideoStreamingAPI.Data
         public DbSet<Movie> Movies { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
         public DbSet<MovieTag> MovieTags { get; set; }
+        public DbSet<MovieActor> MovieActors { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
