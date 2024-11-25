@@ -9,6 +9,7 @@ namespace VideoStreamingAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class MediaStreamingController : ControllerBase
     {
         private readonly IMovieRepository _movieRepository;
@@ -17,8 +18,7 @@ namespace VideoStreamingAPI.Controllers
         {
             _movieRepository = movieRepository;
         }
-        [HttpGet("playlist/{id}")]
-        [Authorize]
+        [HttpGet("playlist/{id}")]        
         public async Task<IActionResult> GetPlaylist(int id)
         {
             var movie = await _movieRepository.GetMovieById(id);
@@ -33,15 +33,12 @@ namespace VideoStreamingAPI.Controllers
                 return NotFound("Playlist not found.");
             }
 
-            // Wczytanie playlisty
             var playlistContent = System.IO.File.ReadAllText(playlistPath);
 
             var baseUrl = $"{Request.Scheme}://{Request.Host}/api/MediaStreaming/segment/{id}/";
             playlistContent = playlistContent.Replace("output", baseUrl + "output");
             return Content(playlistContent, "application/vnd.apple.mpegurl");
-
         }
-
 
         [HttpGet("segment/{id}/{fileName}")]
         public async Task<IActionResult> GetSegment(int id, string fileName)

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 using VideoStreamingAPI.Data;
 using VideoStreamingAPI.Models;
 
@@ -81,7 +82,6 @@ namespace VideoStreamingAPI.Controllers
         [HttpPost("refresh-token")]
         public async Task<IActionResult> RefreshToken([FromBody] RefreshTokenRequest request)
         {
-            // Pobranie refresh tokena z bazy danych
             var storedToken = await _context.RefreshTokens
                 .FirstOrDefaultAsync(rt => rt.Token == request.RefreshToken);
 
@@ -91,22 +91,20 @@ namespace VideoStreamingAPI.Controllers
                 return Unauthorized("token niewazny lub nieprawidłowy");              
             }
 
-            // Znalezienie użytkownika, aby wygenerować nowy access token
             var user = await _userManager.FindByIdAsync(storedToken.UserId);
             if (user == null)
             {
                 return Unauthorized("User not found");
             }
 
-            // Generowanie nowego access tokena
-            var newAccessToken = _tokenService.GenerateJwtToken(user.Id, user.Email, "User");
+            var roles = await _userManager.GetRolesAsync(user);
+            var role = roles.Count > 0 ? roles[0] : "User";
+            var newAccessToken = _tokenService.GenerateJwtToken(user.Id, user.Email, role);
 
-            // Opcjonalnie: Zaktualizuj refresh token (można tutaj dodać rotację tokena odświeżania)
-            storedToken.Expires = DateTime.UtcNow.AddMinutes(5); // Przedłużamy ważność
+            storedToken.Expires = DateTime.UtcNow.AddMinutes(15);
             await _context.SaveChangesAsync();
 
             Console.WriteLine("TOKEN ODŚWIEŻONY");
-            // Zwróć nowy access token
             return Ok(new
             {
                 AccessToken = newAccessToken,

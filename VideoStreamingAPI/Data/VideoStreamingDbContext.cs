@@ -24,12 +24,12 @@ namespace VideoStreamingAPI.Data
 
             modelBuilder.Entity<MovieTag>()
                 .HasOne(mt => mt.Movie)
-                .WithMany(m => m.MovieTags)  // Upewnij się, że właściwość w Movie jest nazwane poprawnie
+                .WithMany(m => m.MovieTags)
                 .HasForeignKey(mt => mt.MovieId);
 
             modelBuilder.Entity<MovieTag>()
                 .HasOne(mt => mt.Tag)
-                .WithMany(t => t.MovieTags)  // Upewnij się, że właściwość w Tag jest nazwane poprawnie
+                .WithMany(t => t.MovieTags)
                 .HasForeignKey(mt => mt.TagId);
 
             modelBuilder.Entity<MovieActor>()

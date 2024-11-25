@@ -31,7 +31,7 @@ public class TokenService
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = new ClaimsIdentity(claims),
-            Expires = DateTime.UtcNow.AddMinutes(10), // Token jest ważny przez 20 sekund
+            Expires = DateTime.UtcNow.AddMinutes(10),
             Issuer = _issuer,
             Audience = _audience,
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
@@ -60,7 +60,7 @@ public class TokenService
             ValidIssuer = _issuer,
             ValidateAudience = true,
             ValidAudience = _audience,
-            ValidateLifetime = false // Ignorujemy czas życia tokena
+            ValidateLifetime = true
         }, out validatedToken);
 
         var userId = principal.FindFirst(ClaimTypes.NameIdentifier)?.Value;
