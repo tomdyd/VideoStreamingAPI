@@ -1,9 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using System.Diagnostics;
-using System.Runtime.CompilerServices;
-using System.Security.AccessControl;
 using VideoStreamingAPI.Data;
 using VideoStreamingAPI.Models;
 using VideoStreamingAPI.Services;
@@ -12,6 +10,7 @@ namespace VideoStreamingAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "admin")]
     public class ManageFilesController : Controller
     {
         private readonly IFileUploadService _fileUploadService;
@@ -34,8 +33,8 @@ namespace VideoStreamingAPI.Controllers
             [FromForm] int chunkIndex,
             [FromForm] int totalChunks,
             [FromForm] string fileName,
-            [FromForm] List<string> actor,
-            [FromForm] List<string> tag){
+            [FromForm] List<string> actors,
+            [FromForm] List<string> tags){
             if (file == null || file.Length == 0)
                 return BadRequest("Brak pliku lub plik jest pusty");
 
@@ -52,6 +51,40 @@ namespace VideoStreamingAPI.Controllers
                     Title = fileName
                 };
                 await _context.Movies.AddAsync(movie);
+
+                foreach (var actorName in actors)
+                {
+                    var actor = await _context.Actors.FirstOrDefaultAsync(x => x.Name == actorName);
+
+                    if (actor != null)
+                    {
+                        var movieActor = new MovieActor()
+                        {
+                            Movie = movie,
+                            Actor = actor
+                        };
+
+                        await _context.MovieActors.AddAsync(movieActor);
+                    }
+                }
+
+
+                foreach (var tagName in tags)
+                {
+                    var tag = await _context.Tags.FirstOrDefaultAsync(x => x.Name == tagName);
+
+                    if (tag != null)
+                    {
+                        var movieTag = new MovieTag()
+                        {
+                            Movie = movie,
+                            Tag = tag
+                        };
+
+                        await _context.MovieTags.AddAsync(movieTag);                        
+                    }
+                }
+
                 await _context.SaveChangesAsync();
                 return Ok(new { message = "Plik przesłany i przetworzony pomyślnie", manifestPath });
             }

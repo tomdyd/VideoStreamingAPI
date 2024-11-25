@@ -31,8 +31,6 @@ namespace VideoStreamingAPI
 
             builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-            // Add services to the container.
-
             builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 
             builder.Services.AddScoped<IMovieRepository, MovieRepository>();

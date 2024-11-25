@@ -6,6 +6,7 @@
         Task<bool> AreAllChunksReceived(int totalChunks, string tempFolderPath);
         Task<string> CombineChunksAsync(string fileName, string tempFolderPath, string uploadFolderPath);
         Task<string> GenerateHlsManifestAsync(string filePath, string outputFolderPath);
+        Task<bool> UploadPhoto(string actorsPhotosPath, IFormFile photo);
+        bool RenameFile(string oldPath, string newPath);
     }
-
 }

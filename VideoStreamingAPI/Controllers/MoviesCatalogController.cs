@@ -40,7 +40,6 @@ namespace VideoStreamingAPI.Controllers
         [HttpGet("tags")]
         public async Task<ActionResult<IEnumerable<Movie>>> GetMoviesByTag([FromQuery(Name = "tags[]")] List<string> tags, [FromQuery] int limit = 10, [FromQuery] int offset = 0)
         {
-
             var movies = await _context.Movies
             .Include(m => m.MovieTags)
             .Where(m => tags.All(tag => m.MovieTags.Any(mt => mt.Tag.Name == tag)))

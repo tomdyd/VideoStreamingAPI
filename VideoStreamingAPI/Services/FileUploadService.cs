@@ -68,11 +68,11 @@ namespace VideoStreamingAPI.Services
              $"\"[0]trim=start={start1}:end={start1 + clipDuration},setpts=PTS-STARTPTS[v1];" +
              $"[0]trim=start={start2}:end={start2 + clipDuration},setpts=PTS-STARTPTS[v2];" +
              $"[0]trim=start={start3}:end={start3 + clipDuration},setpts=PTS-STARTPTS[v3];" +
-             $"[v1][v2][v3]concat=n=3:v=1:a=0[v]\" -map \"[v]\" -profile:v main -c:v libx264 -crf 23 -preset fast \"{previewVideoPath}\"";
+             $"[v1][v2][v3]concat=n=3:v=1:a=0[v]\" -map \"[v]\" -profile:v main -level 4.0 -movflags +faststart -video_track_timescale 60000 -c:v libx264 -crf 23 -preset fast \"{previewVideoPath}\"";
 
             Console.WriteLine($"Wykonuje komendę: {ffmpegArgs}");
             await RunFfmpegAsync(ffmpegArgs);
-            
+
 
             // 4. Generowanie miniatury thumbnail.jpg na podstawie thumbnail_main.mp4
             ffmpegArgs = $"-i \"{previewVideoPath}\" -vframes 1 -q:v 2 \"{thumbnailImagePath}\"";
@@ -169,6 +169,39 @@ namespace VideoStreamingAPI.Services
             return output;
         }
 
-    }
+        public async Task<bool> UploadPhoto(string actorsPhotosPath, IFormFile photo)
+        {
+            if (!Directory.Exists(actorsPhotosPath))
+            {
+                Directory.CreateDirectory(actorsPhotosPath);
+            }
 
+            var photoName = photo.FileName;
+
+            var path = Path.Combine(actorsPhotosPath, photoName);
+
+            if (File.Exists(path))
+            {
+                return false;
+            }
+
+            using (var stream = new FileStream(path, FileMode.Create))
+            {
+                await photo.CopyToAsync(stream);
+            }
+            return true;
+        }
+
+        public bool RenameFile(string oldPath, string newPath)
+        {
+            if (!Directory.Exists(oldPath))
+            {
+                return false;
+            }
+
+            Directory.Move(oldPath, newPath);
+
+            return true;
+        }
+    }
 }

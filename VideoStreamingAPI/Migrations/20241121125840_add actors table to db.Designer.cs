@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VideoStreamingAPI.Data;
 
@@ -11,9 +12,11 @@ using VideoStreamingAPI.Data;
 namespace VideoStreamingAPI.Migrations
 {
     [DbContext(typeof(VideoStreamingDbContext))]
-    partial class VideoStreamingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241121125840_add actors table to db")]
+    partial class addactorstabletodb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -164,10 +167,6 @@ namespace VideoStreamingAPI.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhotoPath")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -337,7 +336,7 @@ namespace VideoStreamingAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tags");
+                    b.ToTable("Tag");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
