@@ -4,5 +4,6 @@
     {
         public string UploadFolderPath { get; set; }
         public string ActorsPhotosPath { get; set; }
+        public string TempChunksPath { get; set; }
     }
 }

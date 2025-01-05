@@ -10,6 +10,7 @@ using VideoStreamingAPI.Data;
 using VideoStreamingAPI.Models;
 using VideoStreamingAPI.Repositories;
 using VideoStreamingAPI.Services;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 namespace VideoStreamingAPI
 {
@@ -18,16 +19,6 @@ namespace VideoStreamingAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
-            builder.Services.Configure<FormOptions>(options =>
-            {
-                options.MultipartBodyLengthLimit = 100L * 1024 * 1024 * 1024;
-            });
-
-            builder.WebHost.ConfigureKestrel(serverOptions =>
-            {
-                serverOptions.Limits.MaxRequestBodySize = 100L * 1024 * 1024 * 1024; // 100 GB
-            });
 
             builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
@@ -38,7 +29,8 @@ namespace VideoStreamingAPI
             var connectionString = builder.Configuration.GetConnectionString("ConnectionString");
 
             builder.Services.AddDbContext<VideoStreamingDbContext>(options =>
-                 options.UseSqlServer(connectionString));
+                 options.UseMySql(connectionString,
+                 new MySqlServerVersion(new Version(10, 11, 6))));
 
             builder.Services.AddIdentity<AppUserModel, IdentityRole>(options =>
             {
@@ -64,12 +56,11 @@ namespace VideoStreamingAPI
             {
                 options.AddPolicy("AllowReactApp",
                     builder => builder
-                    //.WithOrigins("http://192.168.0.17:3000", "http://localhost:3000", "http://10.0.0.3:3000", "http://192.168.0.26:3000", "http://172.20.10.2:3000") // URL, gdzie dzia³a Twój klient React
-                    .AllowAnyOrigin()
+                    .WithOrigins("http://localhost:80", "http://localhost:3000") // URL, gdzie dzia³a Twój klient React
                     .AllowAnyMethod()
                     .AllowAnyHeader());
                     //.AllowCredentials());
-            });
+        });
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

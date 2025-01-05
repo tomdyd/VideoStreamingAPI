@@ -9,7 +9,7 @@ namespace VideoStreamingAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class MediaStreamingController : ControllerBase
     {
         private readonly IMovieRepository _movieRepository;
@@ -35,7 +35,7 @@ namespace VideoStreamingAPI.Controllers
 
             var playlistContent = System.IO.File.ReadAllText(playlistPath);
 
-            var baseUrl = $"{Request.Scheme}://{Request.Host}/api/MediaStreaming/segment/{id}/";
+            var baseUrl = $"http://{Request.Host}/api/MediaStreaming/segment/{id}/";
             playlistContent = playlistContent.Replace("output", baseUrl + "output");
             return Content(playlistContent, "application/vnd.apple.mpegurl");
         }

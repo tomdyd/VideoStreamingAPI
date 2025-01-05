@@ -45,106 +45,42 @@ namespace VideoStreamingAPI.Services
 
         public async Task<string> GenerateHlsManifestAsync(string filePath, string outputFolderPath)
         {
-            var outputManifestPath = Path.Combine(outputFolderPath, "output.m3u8");
-            var previewVideoPath = Path.Combine(outputFolderPath, "thumbnail.mp4");
-            var thumbnailImagePath = Path.Combine(outputFolderPath, "thumbnail.jpg");
+            string scriptPath = "C:\\Users\\Tomek\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\scripts\\proccesVideo.ps1";
 
+            string outputManifestPath = Path.Combine(outputFolderPath, "output.m3u8");
 
-            var ffmpegArgs = $"-i \"{filePath}\" -codec: copy -start_number 0 -hls_time 10 -hls_list_size 0 -f hls \"{outputManifestPath}\"";
-            await RunFfmpegAsync(ffmpegArgs);
+            var process = new Process
+            {
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = "powershell.exe",
+                    Arguments = $"-NoProfile -ExecutionPolicy Bypass -File \"{scriptPath}\" \"{filePath}\" \"{outputManifestPath}\"",
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                }
+            };
 
-            var duration = await GetVideoDurationAsync(filePath);
+            var output = new System.Text.StringBuilder();
+            var errorOutput = new System.Text.StringBuilder();
 
-            double clipDuration = 5.0;
+            // Przechwytywanie wyjścia i błędów
+            process.OutputDataReceived += (sender, args) => output.AppendLine(args.Data);
+            process.ErrorDataReceived += (sender, args) => errorOutput.AppendLine(args.Data);
 
-            double start1 = Math.Round(duration.TotalSeconds * 0.2, 0);
-            double start2 = Math.Round(duration.TotalSeconds * 0.5, 0);
-            double start3 = Math.Round(duration.TotalSeconds * 0.8, 0);
+            process.Start();
+            process.BeginOutputReadLine();
+            process.BeginErrorReadLine();
 
-            ffmpegArgs = $"-i \"{filePath}\" -filter_complex " +
-             $"\"[0]trim=start={start1}:end={start1 + clipDuration},setpts=PTS-STARTPTS[v1];" +
-             $"[0]trim=start={start2}:end={start2 + clipDuration},setpts=PTS-STARTPTS[v2];" +
-             $"[0]trim=start={start3}:end={start3 + clipDuration},setpts=PTS-STARTPTS[v3];" +
-             $"[v1][v2][v3]concat=n=3:v=1:a=0[v]\" -map \"[v]\" -profile:v main -level 4.0 -movflags +faststart -video_track_timescale 60000 -c:v libx264 -crf 23 -preset fast \"{previewVideoPath}\"";
+            await process.WaitForExitAsync();
 
-            Console.WriteLine($"Wykonuje komendę: {ffmpegArgs}");
-            await RunFfmpegAsync(ffmpegArgs);
-
-            ffmpegArgs = $"-i \"{previewVideoPath}\" -vframes 1 -q:v 2 \"{thumbnailImagePath}\"";
-            await RunFfmpegAsync(ffmpegArgs);
+            if (process.ExitCode != 0)
+            {
+                throw new InvalidOperationException($"Skrypt zakończył się błędem: {errorOutput.ToString()}");
+            }
 
             return outputManifestPath;
-        }
-        private async Task<TimeSpan> GetVideoDurationAsync(string filePath)
-        {
-            var ffprobeArgs = $"-v error -show_entries format=duration -of csv=p=0 \"{filePath}\"";
-            var output = await RunFfprobeAsync(ffprobeArgs);
-
-            output = output.Trim();
-
-            if (string.IsNullOrEmpty(output))
-            {
-                throw new Exception("ffprobe returned an empty output for video duration.");
-            }
-
-            if (double.TryParse(output, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out double durationInSeconds))
-            {
-                return TimeSpan.FromSeconds(durationInSeconds);
-            }
-            else
-            {
-                throw new Exception($"Unable to parse ffprobe output as a double: '{output}'");
-            }
-        }
-        private async Task RunFfmpegAsync(string arguments)
-        {
-            var process = new Process
-            {
-                StartInfo = new ProcessStartInfo
-                {
-                    FileName = "ffmpeg",
-                    Arguments = arguments,
-                    RedirectStandardOutput = true,
-                    RedirectStandardError = true,
-                    UseShellExecute = false,
-                    CreateNoWindow = true
-                }
-            };
-
-            process.Start();
-            string ffmpegOutput = await process.StandardError.ReadToEndAsync();
-            process.WaitForExit();
-
-            if (process.ExitCode != 0)
-            {
-                throw new Exception($"FFmpeg error: {ffmpegOutput}");
-            }
-        }
-        private async Task<string> RunFfprobeAsync(string arguments)
-        {
-            var process = new Process
-            {
-                StartInfo = new ProcessStartInfo
-                {
-                    FileName = "ffprobe",
-                    Arguments = arguments,
-                    RedirectStandardOutput = true,
-                    RedirectStandardError = true,
-                    UseShellExecute = false,
-                    CreateNoWindow = true
-                }
-            };
-
-            process.Start();
-            string output = await process.StandardOutput.ReadToEndAsync();
-            process.WaitForExit();
-
-            if (process.ExitCode != 0)
-            {
-                throw new Exception($"FFprobe error: {output}");
-            }
-
-            return output;
         }
 
         public async Task<bool> UploadPhoto(string actorsPhotosPath, IFormFile photo)
