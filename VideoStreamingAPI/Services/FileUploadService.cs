@@ -43,10 +43,8 @@ namespace VideoStreamingAPI.Services
             return finalFilePath;
         }
 
-        public async Task<string> GenerateHlsManifestAsync(string filePath, string outputFolderPath)
+        public async Task<string> GenerateHlsManifestAsync(string filePath, string outputFolderPath, string ffmpegScriptPath)
         {
-            string scriptPath = "C:\\Users\\Tomek\\source\\repos\\VideoStreamingAPI\\VideoStreamingAPI\\scripts\\proccesVideo.ps1";
-
             string outputManifestPath = Path.Combine(outputFolderPath, "output.m3u8");
 
             var process = new Process
@@ -54,7 +52,7 @@ namespace VideoStreamingAPI.Services
                 StartInfo = new ProcessStartInfo
                 {
                     FileName = "powershell.exe",
-                    Arguments = $"-NoProfile -ExecutionPolicy Bypass -File \"{scriptPath}\" \"{filePath}\" \"{outputManifestPath}\"",
+                    Arguments = $"-NoProfile -ExecutionPolicy Bypass -File \"{ffmpegScriptPath}\" \"{filePath}\" \"{outputManifestPath}\"",
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
                     UseShellExecute = false,

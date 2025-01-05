@@ -18,6 +18,7 @@ namespace VideoStreamingAPI.Controllers
         private readonly VideoStreamingDbContext _context;
         private readonly string _uploadFolderPath;
         private readonly string _tempFolderPath;
+        private readonly string _ffmpegScriptPath;
         private readonly IServiceProvider _serviceProvider;
         private readonly ILogger<ManageFilesController> _logger;
 
@@ -28,8 +29,9 @@ namespace VideoStreamingAPI.Controllers
             _uploadFolderPath = appSettings.Value.UploadFolderPath;
             _tempFolderPath = appSettings.Value.TempChunksPath;
             _fileRemoveService = fileRemoveService;
+            _ffmpegScriptPath = appSettings.Value.FfmpegScriptPath;
             _serviceProvider = serviceProvider;
-            _logger = logger;
+            _logger = logger;            
         }
 
         [HttpPost("upload")]
@@ -56,7 +58,7 @@ namespace VideoStreamingAPI.Controllers
                             var scopedContext = scope.ServiceProvider.GetRequiredService<VideoStreamingDbContext>();
 
                             var finalFilePath = await _fileUploadService.CombineChunksAsync(fileName, _tempFolderPath, _uploadFolderPath);
-                            var manifestPath = await _fileUploadService.GenerateHlsManifestAsync(finalFilePath, Path.Combine(_uploadFolderPath, fileName));
+                            var manifestPath = await _fileUploadService.GenerateHlsManifestAsync(finalFilePath, Path.Combine(_uploadFolderPath, fileName), _ffmpegScriptPath);
 
                             var movie = new Movie()
                             {
